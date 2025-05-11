@@ -1,0 +1,222 @@
+/* Modern CSS for AGRISMART Website - HTML5 Version */
+
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+  }
+  
+  .logo {
+    display: block;
+    max-height: 80px;
+    margin: 0 auto 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #2e7d32;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav li {
+    margin: 0 5px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: block;
+  }
+  
+  nav a:hover, nav a.active {
+    background-color: #1b5e20;
+    transform: translateY(-3px);
+  }
+  
+  /* Banner Section */
+  .banner {
+    margin: 30px 0;
+  }
+  
+  .promo-banner {
+    background: linear-gradient(135deg, #ffeb3b, #ffc107);
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+  
+  .promo-banner h2 {
+    font-size: 1.5rem;
+    color: #d32f2f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .company-info {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .company-info h1 {
+    color: #2e7d32;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  
+  .company-info h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #2e7d32;
+    margin: 15px auto;
+    border-radius: 2px;
+  }
+  
+  .company-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* Featured Image Section */
+  .featured-image {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-image:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .company-info {
+      padding: 25px;
+    }
+    
+    .company-info h1 {
+      font-size: 2rem;
+    }
+    
+    .company-info p {
+      font-size: 1rem;
+    }
+    
+    .promo-banner h2 {
+      font-size: 1.2rem;
+    }
+    
+    nav a {
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav li {
+      margin: 5px 0;
+      width: 80%;
+    }
+    
+    nav a {
+      text-align: center;
+    }
+    
+    .company-info h1 {
+      font-size: 1.8rem;
+    }
+    
+    .company-info p {
+      font-size: 0.95rem;
+    }
+    
+    .company-info {
+      padding: 20px;
+    }
+  }
